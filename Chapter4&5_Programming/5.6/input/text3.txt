@@ -1,0 +1,14 @@
+If you’ve done a little C programming, there’s nothing really new up to this point.
+When we start the program from the command line, the operating system starts a
+single-threaded process and the process executes the code in the main function. How-
+ever, things get interesting in Line 11. This is our first OpenMP directive, and we’re
+using it to specify that the program should start some threads. Each thread that’s
+forked should execute the Hello function, and when the threads return from the call
+to Hello , they should be terminated, and the process should then terminate when it
+executes the return statement.
+That’s a lot of bang for the buck (or code). If you studied the Pthreads chapter,
+you’ll recall that we had to write a lot of code to fork and join multiple threads: we
+needed to allocate storage for a special struct for each thread, we used a for loop to
+start each thread, and we used another for loop to terminate the threads. Thus, it’s
+immediately evident that OpenMP is higher-level than Pthreads.
+We’ve already seen that pragma s in C and C ++ start with

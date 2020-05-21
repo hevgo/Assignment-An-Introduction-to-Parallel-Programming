@@ -1,0 +1,24 @@
+However, the variables that are declared in the main function ( a , b , n,
+global result , and thread count ) are all accessible to all the threads in the team
+started by the parallel directive. Hence, the default scope for variables declared
+before a parallel block is shared. In fact, we’ve made implicit use of this: each
+thread in the team gets the values of a , b , and n from the call to Trap . Since this call
+takes place in the parallel block, it’s essential that each thread has access to a , b ,
+and n when their values are copied into the corresponding formal arguments.
+Furthermore, in the Trap function, although global result p is a private vari-
+able, it refers to the variable global result which was declared in main before the
+parallel directive, and the value of global result is used to store the result that’s
+printed out after the parallel block. So in the code
+∗global result p += my result;
+it’s essential that ∗ global result p have shared scope. If it were private to each
+thread, there would be no need for the critical directive. Furthermore, if it were
+private, we would have a hard time determining the value of global result in main
+after completion of the parallel block.
+To summarize, then, variables that have been declared before a parallel direc-
+tive have shared scope among the threads in the team, while variables declared in the
+block (e.g., local variables in functions) have private scope. Furthermore, the value
+of a shared variable at the beginning of the parallel block is the same as the
+value before the block, and, after completion of the parallel block, the value of
+the variable is the value at the end of the block.
+We’ll shortly see that the default scope of a variable can change with other
+directives, and that OpenMP provides clauses to modify the default scope.

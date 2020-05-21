@@ -1,0 +1,31 @@
+Like Pthreads, OpenMP is an API for shared-memory parallel programming. The
+“MP” in OpenMP stands for “multiprocessing,” a term that is synonymous with
+shared-memory parallel computing. Thus, OpenMP is designed for systems in which
+each thread or process can potentially have access to all available memory, and, when
+we’re programming with OpenMP, we view our system as a collection of cores or
+CPUs, all of which have access to main memory, as in Figure 5.1.
+Although OpenMP and Pthreads are both APIs for shared-memory programming,
+they have many fundamental differences. Pthreads requires that the programmer
+explicitly specify the behavior of each thread. OpenMP, on the other hand, some-
+times allows the programmer to simply state that a block of code should be executed
+in parallel, and the precise determination of the tasks and which thread should execute
+them is left to the compiler and the run-time system. This suggests a further differ-
+ence between OpenMP and Pthreads, that is, that Pthreads (like MPI) is a library of
+functions that can be linked to a C program, so any Pthreads program can be used
+with any C compiler, provided the system has a Pthreads library. OpenMP, on the
+other hand, requires compiler support for some operations, and hence it’s entirely
+possible that you may run across a C compiler that can’t compile OpenMP programs
+into parallel programs.
+These differences also suggest why there are two standard APIs for shared-
+memory programming: Pthreads is lower level and provides us with the power to
+program virtually any conceivable thread behavior. This power, however, comes with
+some associated cost—it’s up to us to specify every detail of the behavior of each
+thread. OpenMP, on the other hand, allows the compiler and run-time system to deter-
+mine some of the details of thread behavior, so it can be simpler to code some parallel
+behaviors using OpenMP. The cost is that some low-level thread interactions can be
+more difficult to program.
+OpenMP was developed by a group of programmers and computer scien-
+tists who believed that writing large-scale high-performance programs using APIs
+such as Pthreads was too difficult, and they defined the OpenMP specification
+so that shared-memory programs could be developed at a higher level. In fact,
+OpenMP was explicitly designed to allow programmers to incrementally parallelize

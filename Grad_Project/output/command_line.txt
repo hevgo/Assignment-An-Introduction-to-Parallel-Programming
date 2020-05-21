@@ -1,0 +1,120 @@
+[yjing@login Grad_project]$ ./run 1
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000089
+end of initialization, total time = 0.000431
+end of all the calculation, total time = 7.538139
+end of the program, total time = 7.538157
+
+[yjing@login Grad_project]$ ./run 2
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000103
+end of initialization, total time = 0.000405
+end of all the calculation, total time = 4.443750
+end of the program, total time = 4.443759
+
+[yjing@login Grad_project]$ ./run 3
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000091
+end of initialization, total time = 0.000421
+end of all the calculation, total time = 3.337933
+end of the program, total time = 3.337944
+
+[yjing@login Grad_project]$ ./run 4
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000086
+end of initialization, total time = 0.000403
+end of all the calculation, total time = 2.811191
+end of the program, total time = 2.811199
+
+[yjing@login Grad_project]$ ./run 8
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000090
+end of initialization, total time = 0.000427
+end of all the calculation, total time = 2.154182
+end of the program, total time = 2.154190
+
+[yjing@login Grad_project]$ ./run 12
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000104
+end of initialization, total time = 0.000421
+end of all the calculation, total time = 1.956770
+end of the program, total time = 1.956779
+
+[yjing@login Grad_project]$ ./run 16
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000090
+end of initialization, total time = 0.000412
+end of all the calculation, total time = 2.223687
+end of the program, total time = 2.223698
+
+[yjing@login Grad_project]$ ./run 24
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000095
+end of initialization, total time = 0.000422
+end of all the calculation, total time = 3.233007
+end of the program, total time = 3.233022
+
+[yjing@login Grad_project]$ ./run 32
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000089
+end of initialization, total time = 0.000401
+end of all the calculation, total time = 6.609049
+end of the program, total time = 6.609060
+
+
+[yjing@login Grad_project]$ ./run 64
+time variables initialized
+c = 4e-06
+end of the preparation, total time = 0.000127
+end of initialization, total time = 0.000452
+end of all the calculation, total time = 11.588297
+end of the program, total time = 11.588309
+
+
+manual:
+
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 1
+end of the program, total time = 2.804359
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 2
+end of the program, total time = 1.523188
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 3
+end of the program, total time = 1.224202
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 4
+end of the program, total time = 1.088269
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 5
+end of the program, total time = 1.268057
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 6
+end of the program, total time = 1.083441
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 7
+end of the program, total time = 1.009003
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 8
+end of the program, total time = 1.038236
+
+
+
+omp default:
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 1
+end of the program, total time = 2.782830
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 2
+end of the program, total time = 1.603253
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 3
+end of the program, total time = 1.258516
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 4
+end of the program, total time = 1.122829
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 5
+end of the program, total time = 1.377319
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 6
+end of the program, total time = 1.173682
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 7
+end of the program, total time = 1.146188
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k_class/HPC/Assignments/Grad_Project$ ./run 8
+end of the program, total time = 1.037330

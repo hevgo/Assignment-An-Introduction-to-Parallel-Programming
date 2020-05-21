@@ -1,0 +1,102 @@
+﻿#####################################
+3.9
+#####################################
+yuxuan@yuxuan-XPS-13-9380:~/Dropbox/k课程和讲义/HPC/Assignments/Ex3/3_9$ mpiexec -n 4 ./run 
+Enter the order of the vectors
+4
+Enter the scalar to multiply
+2
+Enter the first vector
+1
+2
+3
+4
+Enter the second vector
+1
+2
+3
+4
+Proc 0 > dot = 60.000000
+Proc 1 > dot = 60.000000
+Proc 2 > dot = 60.000000
+Proc 3 > dot = 60.000000
+
+
+#####################################
+3.11.a
+#####################################
+yuj474@Diophantus:~/Ex3/3_11/3_11_a$ ./run 
+Enter number of array elements: 3
+x[ 0]= 33, x[ 0]=33
+x[ 1]= 36, x[ 1]+x[ 0]=69
+x[ 2]= 27, x[ 2]+x[ 1]+x[ 0]=96
+
+#####################################
+3.11.b
+#####################################
+yuj474@Diophantus:~/Ex3/3_11/3_11_b$ mpiexec -n 4 ./run 
+x[0]=39, sum = 39
+x[1]=5, sum = 44
+x[2]=38, sum = 82
+x[3]=7, sum = 89
+
+#####################################
+3.11.c serial
+#####################################
+yuxuan@yuxuan-XPS-13-9380:~/Desktop/Ex3/3_11/3_11_c_ser$ ./run 
+Enter the power of 2, number of array elements: 3
+a[0]=33 	 SUM[0]= 33
+a[1]=36 	 SUM[1]= 69
+a[2]=27 	 SUM[2]= 96
+a[3]=15 	 SUM[3]=111
+a[4]=43 	 SUM[4]=154
+a[5]=35 	 SUM[5]=189
+a[6]=36 	 SUM[6]=225
+a[7]=42 	 SUM[7]=267
+
+
+#####################################
+3.11.c parallel
+#####################################
+yuxuan@yuxuan-XPS-13-9380:~/Desktop/Ex3/3_11/3_11_c_par$ mpiexec -n 8 ./run 
+Please tell me the number of processer, is 2 to the power of:
+3
+Proc 0 > Start local_val = 32.000000
+Proc 1 > Start local_val = 41.000000
+Proc 2 > Start local_val = 40.000000
+Proc 3 > Start local_val = 34.000000
+Proc 4 > Start local_val = 26.000000
+Proc 5 > Start local_val = 14.000000
+Proc 6 > Start local_val = 41.000000
+Proc 7 > Start local_val = 7.000000
+
+Proc 0 > Final local_val = 32.000000
+Proc 1 > Final local_val = 73.000000
+Proc 2 > Final local_val = 113.000000
+Proc 3 > Final local_val = 147.000000
+Proc 4 > Final local_val = 173.000000
+Proc 5 > Final local_val = 187.000000
+Proc 6 > Final local_val = 228.000000
+Proc 7 > Final local_val = 235.000000
+
+
+#####################################
+3.12.a
+#####################################
+yuxuan@yuxuan-XPS-13-9380:~/Desktop/Ex3/3_12$ mpiexec -n 8 ./run 
+D[0]=33
+D[1]=36
+D[2]=27
+D[3]=15
+D[4]=43
+D[5]=35
+D[6]=36
+D[7]=42
+ALLREDUCE_SUM[0]=267
+ALLREDUCE_SUM[1]=267
+ALLREDUCE_SUM[2]=267
+ALLREDUCE_SUM[3]=267
+ALLREDUCE_SUM[4]=267
+ALLREDUCE_SUM[5]=267
+ALLREDUCE_SUM[6]=267
+ALLREDUCE_SUM[7]=267

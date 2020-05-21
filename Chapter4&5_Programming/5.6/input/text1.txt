@@ -1,0 +1,11 @@
+requires approximately twice as much time as the time to execute f (i).
+When we ran the program with n = 10,000 and one thread, the run-time was 3.67
+seconds. When we ran the program with two threads and the default assignment—
+iterations 0–5000 on thread 0 and iterations 5001–10,000 on thread 1—the run-time
+was 2.76 seconds. This is a speedup of only 1.33. However, when we ran the program
+with two threads and a cyclic assignment, the run-time was decreased to 1.84 seconds.
+This is a speedup of 1.99 over the one-thread run and a speedup of 1.5 over the
+two-thread block partition!
+We can see that a good assignment of iterations to threads can have a very sig-
+nificant effect on performance. In OpenMP, assigning iterations to threads is called
+scheduling, and the schedule clause can be used to assign iterations in either a
